@@ -21,11 +21,11 @@ main{
   gap: 50px;
 }
 
-main p:first-line{
+main p:first-child, .container div:first-child{
   font-size: 22px;
 }
 
-#tabela{
+.container{
   width: 100%;
   margin: 0 auto;
   max-width: 400px;
@@ -34,13 +34,14 @@ main p:first-line{
   position: relative;
 }
 
-#tabela div{
+.container table th{
   margin: 20px auto;
   justify-content: space-evenly;
   align-items: center;
+  text-align: center;
 }
 
-#tabela span{
+.container span{
   font-weight: bold;
 }
 
@@ -65,5 +66,23 @@ main p:first-line{
   position: absolute;
   right: 20px;
   top: 25px;
+}
+
+#tabela{
+  width: 100%;
+}
+
+#tabela tr, #tabela tr td{
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+  text-align: center;
+
+}
+
+#tabela tr td:last-child{
+  flex-direction: row-reverse;
 }
 
