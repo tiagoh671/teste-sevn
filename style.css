@@ -98,3 +98,12 @@ table span{
   font-size: 20px;
 }
 
+@media (max-width: 550px){
+  .container{
+    max-width: 350px;
+  }
+
+  .texto{
+    margin: 0 10px;
+  }
+}
