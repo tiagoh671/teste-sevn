@@ -82,7 +82,12 @@ main p:first-child, .container div:first-child{
 
 }
 
-#tabela tr td:last-child{
-  flex-direction: row-reverse;
-}
 
+#tabela span{
+  color: gray;
+}
+.desabilitado{
+  background-color: gray;
+  color: #000;
+  cursor: auto;
+}
